@@ -1,0 +1,33 @@
+{
+  "name": "genpark-amami-agent-analytics-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Amami built-in agent analytics estimator.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "analytics",
+    "metrics",
+    "amami"
+  ],
+  "inputs": {
+    "token_count": {
+      "type": "integer"
+    },
+    "response_time_ms": {
+      "type": "integer"
+    },
+    "user_satisfied": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "cost_usd": {
+      "type": "number"
+    },
+    "performance_rating": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
